@@ -1,0 +1,12 @@
+import csv
+import pandas as pd
+
+with open('elever.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(["Nummer", "Namn", "Sommar aktivitet"])
+    writer.writerow([1, "Johanna", "Plugga"])
+    writer.writerow([2, "Rickard", "Springa"])
+    writer.writerow([3, "Michael", "Programmera"])
+    
+pdElev = pd.read_csv("elever.csv")
+pdElev 
